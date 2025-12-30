@@ -1,0 +1,46 @@
+@use '../../src/variables-functions' as *;
+@use '../../src/base';
+
+.welcome {
+	display: flex;
+	flex-direction: column;
+	margin: 10rem 1rem;
+	background: $gradient-blue;
+	padding: 1.5rem;
+	border-radius: 1.5rem;
+	color: $text-white;
+  
+	&-title {
+		font-size: 1.3rem;
+		margin-bottom: 1rem;
+	}
+
+	&-description {
+		min-width: 12.5rem;
+		font-size: 1rem;
+		font-weight: 300;
+		line-height: 1.5;
+		margin-bottom: 1rem;
+	}
+	&-buttons {
+		color: #fff;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		font-size: 1.5rem;
+		flex-direction: row;
+		align-content: center;
+		justify-content: flex-start;
+		gap: 0.5em;
+
+		&-btn {
+			background-color: rgb(255 255 255 / 43%);
+			cursor: text;
+			width: 20ch;
+			padding: 0.3em;
+			border-radius: 2rem;
+			border: none;
+		}
+	}
+}
