@@ -1,18 +1,41 @@
+@keyframes stick-scale {
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes slide-in {
+	from {
+		opacity: 0;
+		// Начинаем чуть выше (на 50px), чтобы не зависеть от высоты родителя
+		transform: translate(-50px, -50px);
+	}
+	to {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+@keyframes header-scale {
+	from {
+		height: 7em;
+		width: 100%;
+		background-color: rgb(243 249 255 / 95%);
+		transform: translate(-50%, 0); // Обязательно сохраняем центровку!
+	}
+	to {
+		height: 6em;
+		width: 95%;
+		transform: translate(-50%, 0); // Обязательно сохраняем центровку!
+		border-radius: 0 0 30px 30px;
+		background-color: rgb(243 249 255 / 80%);
+	}
+}
+
 @keyframes book-spin {
 	from {
 		transform: rotate(0deg);
 	}
 	to {
 		transform: rotate(360deg);
-	}
-}
-@keyframes slideUp {
-	0% {
-		opacity: 0;
-		transform: translateY(-10px);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0px);
 	}
 }

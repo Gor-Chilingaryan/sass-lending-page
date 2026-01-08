@@ -8,18 +8,18 @@
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-	margin: 10rem 1rem;
-	background: $gradient-blue;
+	margin: 10rem 1rem 2rem 1rem;
 	padding: 2rem 1rem;
 	border-radius: 1.5rem;
 	color: $text-white;
+	background: $gradient-blue;
 
 	.bubble {
 		position: absolute;
 		background: rgba(255, 255, 255, 0.7);
+		opacity: 0;
 		border-radius: 50%;
 		filter: blur(-1px);
-		opacity: 0;
 		animation: move-right infinite linear;
 
 		@for $i from 1 through 10 {
@@ -50,38 +50,24 @@
 
 	&-buttons {
 		color: #fff;
+		font-size: 1.5rem;
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		font-size: 1.5rem;
 		flex-direction: row;
 		align-content: center;
 		justify-content: flex-start;
 		gap: 0.5em;
 
 		&-btn {
-			background-color: rgb(255 255 255 / 10%);
-			box-shadow: inset 0 0 13px 5px rgb(255 255 255 / 27%);
 			cursor: text;
 			width: 20ch;
 			padding: 0.3em;
 			border-radius: 2rem;
 			border: none;
+			background-color: rgb(255 255 255 / 10%);
+			box-shadow: inset 0 0 13px 5px rgb(255 255 255 / 27%);
 		}
 	}
-}
-
-
-@keyframes zoomIn {
-  0% {
-    opacity: 0;
-
-    transform: scale(0.3); 
-  }
-  100% {
-    opacity: 1;
-
-    transform: scale(1);
-  }
 }
