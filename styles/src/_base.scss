@@ -1,4 +1,4 @@
-/* reset styles */
+
 * {
 	color: inherit;
 	margin: 0;
@@ -9,6 +9,9 @@
 
 body {
 	font-family: Poppins;
+	margin: 0 auto;
+	max-width: 1440px;
+	
 }
 
 ul li {

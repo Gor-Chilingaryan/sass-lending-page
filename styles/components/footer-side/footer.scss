@@ -2,12 +2,24 @@
 @use '../../src/base';
 
 .footer {
+  position: absolute;
+  left: 0;
+  right: 0;
   background-color: #0a0024;
   color: $text-white;
   padding: 3em 0.5em;
+  border-radius: 15px;
 
+  &-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
   &-content {
-
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
