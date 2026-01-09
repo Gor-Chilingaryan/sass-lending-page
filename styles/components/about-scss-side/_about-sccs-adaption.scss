@@ -1,0 +1,13 @@
+@media screen and (max-width: 785px) {
+	.table-scss {
+		width: 100%;
+		overflow-x: scroll;
+		-webkit-overflow-scrolling: touch;
+		margin-bottom: 20px;
+	}
+
+	table {
+		min-width: 800px;
+		border-collapse: collapse;
+	}
+}
