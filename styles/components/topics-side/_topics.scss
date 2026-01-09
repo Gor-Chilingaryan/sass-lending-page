@@ -14,6 +14,7 @@
     font-weight: 600;
     color: $text-black;
   }
+
   &-descr {
     margin: 0.5rem 0;
     font-size: clamp(0.8rem, 5vw, 1.5rem);
@@ -29,6 +30,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 3rem;
+
   &-item {
     max-width: 335px;
     height: auto;
@@ -43,6 +45,7 @@
     &:hover {
       transform: translateY(-10px);
     }
+
     &-icon {
       width: 3.5rem;
       height: 3.5rem;
@@ -55,17 +58,20 @@
         animation: rotate 0.5s ease-in-out;
       }
     }
+
     &-title {
       font-size: clamp(0.8rem, 5vw, 1.5rem);
       font-weight: 400;
       margin-bottom: 0.5rem;
     }
+
     &-descr {
       font-size: clamp(0.6rem, 5vw, 1.3rem);
       font-weight: 300;
-      color: $text-grey;
+      color: #4c4f58;
       margin-bottom: 0.5rem;
     }
+    
     &-btn {
       padding: 0;
       margin-bottom: 0.5rem;

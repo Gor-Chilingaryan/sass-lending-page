@@ -7,7 +7,6 @@
 @keyframes slide-in {
 	from {
 		opacity: 0;
-		// Начинаем чуть выше (на 50px), чтобы не зависеть от высоты родителя
 		transform: translate(-50px, -50px);
 	}
 	to {
@@ -15,17 +14,18 @@
 		transform: translate(0, 0);
 	}
 }
+
 @keyframes header-scale {
 	from {
 		height: 7em;
 		width: 100%;
 		background-color: rgb(243 249 255 / 95%);
-		transform: translate(-50%, 0); // Обязательно сохраняем центровку!
+		transform: translate(-50%, 0);
 	}
 	to {
 		height: 6em;
 		width: 95%;
-		transform: translate(-50%, 0); // Обязательно сохраняем центровку!
+		transform: translate(-50%, 0);
 		border-radius: 0 0 30px 30px;
 		background-color: rgb(243 249 255 / 80%);
 	}

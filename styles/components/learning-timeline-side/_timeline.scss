@@ -60,6 +60,7 @@
 				animation: spin 0.5s linear;
 			}
 		}
+
 		&-content {
 			&__animation {
 				display: flex;
@@ -73,11 +74,13 @@
 					transform: translateX(10px);
 				}
 			}
+
 			&-date {
 				font-size: clamp(0.8rem, 5vw, 1.5rem);
 				font-weight: 600;
 				color: $text-grey;
 			}
+
 			&-title {
 				font-size: clamp(1rem, 5vw, 2rem);
 				font-weight: 600;
@@ -86,6 +89,7 @@
 				margin-top: 0.5rem;
 			}
 		}
+		
 		&-number {
 			font-weight: 600;
 			color: $text-black;

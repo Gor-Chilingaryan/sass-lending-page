@@ -1,0 +1,57 @@
+@use '../../src/variables-functions' as *;
+@use '../../src/base';
+
+.practic {
+  margin: 10em 1em 0;
+  align-items: flex-start;
+
+  &-title {
+    font-size: clamp(1rem, 5vw, 2rem);
+    font-weight: 500;
+    color: #18191be4;
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    margin: 5rem 0;
+    gap: 3rem;
+    box-shadow: 0 6px 16px 0px rgb(0 0 0 / 55%);
+    border-radius: 15px;
+
+    &-item {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      grid-template-areas:
+        'icon title'
+        'icon descr';
+      width: 450px;
+      height: 100%;
+      padding: 1rem;
+      margin: 1rem;
+      gap: 10px;
+
+      &-icon {
+        grid-area: icon;
+        font-size: 2rem;
+      }
+      
+      &-title {
+        grid-area: title;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+
+      &-descr {
+        grid-area: descr;
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: #4c4f58ac;
+      }
+    }
+  }
+}
